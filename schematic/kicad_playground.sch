@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5BC79558
-P 4000 1750
-F 0 "R?" H 4070 1796 50  0000 L CNN
-F 1 "220K" H 4070 1705 50  0000 L CNN
-F 2 "" V 3930 1750 50  0001 C CNN
-F 3 "~" H 4000 1750 50  0001 C CNN
-	1    4000 1750
+P 4000 1250
+F 0 "R?" H 4070 1296 50  0000 L CNN
+F 1 "220K" H 4070 1205 50  0000 L CNN
+F 2 "" V 3930 1250 50  0001 C CNN
+F 3 "~" H 4000 1250 50  0001 C CNN
+	1    4000 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -66,11 +66,9 @@ Wire Wire Line
 	4000 2200 4000 2000
 Connection ~ 4000 2000
 Wire Wire Line
-	4000 2000 4000 1900
+	4000 2000 4000 1400
 Wire Wire Line
-	3050 1000 3700 1000
-Wire Wire Line
-	4000 1000 4000 1600
+	4000 1000 4000 1100
 Connection ~ 3050 1000
 Connection ~ 3550 2550
 Wire Wire Line
@@ -84,37 +82,8 @@ Wire Wire Line
 Wire Wire Line
 	2450 1800 2550 1800
 Connection ~ 3050 2550
-$Comp
-L Device:R R?
-U 1 1 5BC79B30
-P 3700 1650
-F 0 "R?" H 3770 1696 50  0000 L CNN
-F 1 "68K" H 3770 1605 50  0000 L CNN
-F 2 "" V 3630 1650 50  0001 C CNN
-F 3 "~" H 3700 1650 50  0001 C CNN
-	1    3700 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3700 1800 3550 1800
-$Comp
-L Device:LED D?
-U 1 1 5BC79F1A
-P 3700 1250
-F 0 "D?" V 3645 1328 50  0000 L CNN
-F 1 "LED" V 3736 1328 50  0000 L CNN
-F 2 "" H 3700 1250 50  0001 C CNN
-F 3 "~" H 3700 1250 50  0001 C CNN
-	1    3700 1250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3700 1400 3700 1500
-Wire Wire Line
-	3700 1100 3700 1000
-Connection ~ 3700 1000
-Wire Wire Line
-	3700 1000 4000 1000
+	4450 1800 3550 1800
 NoConn ~ 2550 2000
 $Comp
 L power:+5V #PWR?
@@ -144,4 +113,13 @@ $EndComp
 Wire Wire Line
 	2450 2650 2450 2550
 Connection ~ 2450 2550
+$Sheet
+S 4450 1700 500  400 
+U 5BC7CB77
+F0 "LEDs" 50
+F1 "LEDs.sch" 50
+F2 "DRV" I L 4450 1800 50 
+$EndSheet
+Wire Wire Line
+	3050 1000 4000 1000
 $EndSCHEMATC

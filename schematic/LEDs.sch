@@ -1,0 +1,99 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5BC7CC3D
+P 3350 1850
+F 0 "R?" H 3420 1896 50  0000 L CNN
+F 1 "68K" H 3420 1805 50  0000 L CNN
+F 2 "" V 3280 1850 50  0001 C CNN
+F 3 "~" H 3350 1850 50  0001 C CNN
+	1    3350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2100 3200 2100
+$Comp
+L Device:LED D?
+U 1 1 5BC7CC45
+P 3350 1450
+F 0 "D?" V 3295 1528 50  0000 L CNN
+F 1 "LED" V 3386 1528 50  0000 L CNN
+F 2 "" H 3350 1450 50  0001 C CNN
+F 3 "~" H 3350 1450 50  0001 C CNN
+	1    3350 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 1600 3350 1700
+Wire Wire Line
+	3350 1300 3350 1200
+Text HLabel 3200 2100 0    50   Input ~ 0
+DRV
+$Comp
+L power:+5V #PWR?
+U 1 1 5BC7CC8E
+P 3350 1200
+F 0 "#PWR?" H 3350 1050 50  0001 C CNN
+F 1 "+5V" H 3365 1373 50  0000 C CNN
+F 2 "" H 3350 1200 50  0001 C CNN
+F 3 "" H 3350 1200 50  0001 C CNN
+	1    3350 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2000 3350 2100
+Wire Wire Line
+	3350 2100 3350 2200
+Connection ~ 3350 2100
+$Comp
+L Device:R R?
+U 1 1 5BC7CE49
+P 3350 2750
+F 0 "R?" H 3420 2796 50  0000 L CNN
+F 1 "68K" H 3420 2705 50  0000 L CNN
+F 2 "" V 3280 2750 50  0001 C CNN
+F 3 "~" H 3350 2750 50  0001 C CNN
+	1    3350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5BC7CE50
+P 3350 2350
+F 0 "D?" V 3295 2428 50  0000 L CNN
+F 1 "LED" V 3386 2428 50  0000 L CNN
+F 2 "" H 3350 2350 50  0001 C CNN
+F 3 "~" H 3350 2350 50  0001 C CNN
+	1    3350 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 2500 3350 2600
+Wire Wire Line
+	3350 2900 3350 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5BC7CECD
+P 3350 3050
+F 0 "#PWR?" H 3350 2800 50  0001 C CNN
+F 1 "GND" H 3355 2877 50  0000 C CNN
+F 2 "" H 3350 3050 50  0001 C CNN
+F 3 "" H 3350 3050 50  0001 C CNN
+	1    3350 3050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
