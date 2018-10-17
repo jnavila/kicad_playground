@@ -1,4 +1,120 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:LM555 U?
+U 1 1 5BC794C1
+P 3050 2000
+F 0 "U?" H 2750 2350 50  0000 C CNN
+F 1 "LM555" H 3300 2350 50  0000 C CNN
+F 2 "" H 3050 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 3050 2000 50  0001 C CNN
+	1    3050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BC79558
+P 4000 1750
+F 0 "R?" H 4070 1796 50  0000 L CNN
+F 1 "220K" H 4070 1705 50  0000 L CNN
+F 2 "" V 3930 1750 50  0001 C CNN
+F 3 "~" H 4000 1750 50  0001 C CNN
+	1    4000 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2200 2350 2200
+Wire Wire Line
+	2350 2200 2350 1000
+Wire Wire Line
+	2350 1000 3050 1000
+Wire Wire Line
+	3050 1000 3050 1600
+$Comp
+L Device:R R?
+U 1 1 5BC795B1
+P 4000 2200
+F 0 "R?" H 4070 2246 50  0000 L CNN
+F 1 "22K" H 4070 2155 50  0000 L CNN
+F 2 "" V 3930 2200 50  0001 C CNN
+F 3 "~" H 4000 2200 50  0001 C CNN
+	1    4000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2200 3550 2400
+Wire Wire Line
+	3550 2400 4000 2400
+Wire Wire Line
+	4000 2400 4000 2350
+Wire Wire Line
+	3550 2000 4000 2000
+Wire Wire Line
+	4000 2050 4000 2000
+Connection ~ 4000 2000
+Wire Wire Line
+	4000 2000 4000 1900
+Wire Wire Line
+	3050 1000 3700 1000
+Wire Wire Line
+	4000 1000 4000 1600
+Connection ~ 3050 1000
+Wire Wire Line
+	3550 2550 3550 2400
+Connection ~ 3550 2400
+Wire Wire Line
+	3550 2550 3050 2550
+Wire Wire Line
+	3050 2550 3050 2400
+Wire Wire Line
+	3050 2550 2450 2550
+Wire Wire Line
+	2450 2550 2450 1800
+Wire Wire Line
+	2450 1800 2550 1800
+Connection ~ 3050 2550
+$Comp
+L Device:R R?
+U 1 1 5BC79B30
+P 3700 1650
+F 0 "R?" H 3770 1696 50  0000 L CNN
+F 1 "68K" H 3770 1605 50  0000 L CNN
+F 2 "" V 3630 1650 50  0001 C CNN
+F 3 "~" H 3700 1650 50  0001 C CNN
+	1    3700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1800 3550 1800
+$Comp
+L Device:LED D?
+U 1 1 5BC79F1A
+P 3700 1250
+F 0 "D?" V 3645 1328 50  0000 L CNN
+F 1 "LED" V 3736 1328 50  0000 L CNN
+F 2 "" H 3700 1250 50  0001 C CNN
+F 3 "~" H 3700 1250 50  0001 C CNN
+	1    3700 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 1450 3700 1500
+Wire Wire Line
+	3700 1050 3700 1000
+Connection ~ 3700 1000
+Wire Wire Line
+	3700 1000 4000 1000
 $EndSCHEMATC
